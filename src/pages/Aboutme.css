@@ -1,0 +1,121 @@
+.about-container{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    gap:80px;
+    margin:30px 100px;
+
+
+}
+.about-title{
+    position:relative;
+    font-size:30px;
+    font-weight:600;
+
+}
+.about-section{
+    display:flex;
+    gap:80px;
+}
+.about-right{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+}
+.about-paragraph{
+    display:flex;
+    flex-direction:column;
+    gap:2em;
+    font-weight:600;
+    font-size:20px;
+}
+.about-skills{
+    display:flex;
+    flex-direction:column;
+    gap:2em;
+   
+}
+.about-skill{
+    display:flex;
+    gap:50px;
+    align-items:center;
+    transition:0.3s;
+    cursor:pointer;
+}
+.about-skill p{
+    min-width:150px;
+    font-size:18px;
+    font-weight:600;
+
+}
+
+.about-skill hr{
+    outline:none;
+    border:none;
+    width:50%;
+    height:10px;
+    border-radius:50px;
+    background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+}
+.about-skill:hover {
+    transform:scale(1.05);
+    transition:0.3s;
+}
+.about-achievements-container{
+    width:100%;
+    max-width:100%; 
+    display:flex;
+    justify-content:center; 
+}
+.about-achievement{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    cursor:pointer;
+ 
+}
+
+.about-achievement h1 span:first-child{
+    font-size:3em;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight:700;
+}
+.about-achievement h1 span:last-child{
+    font-size:2em;
+    color:black;
+   
+}
+
+
+
+.about-styles{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  
+    
+}
+.about-styles{
+    font-weight:600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
