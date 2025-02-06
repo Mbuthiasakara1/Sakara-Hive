@@ -67,11 +67,12 @@
     
 
 }
-.hero-connect{
+.hero-connect a{
     padding:25px 35px;
     border-radius:50px;
     background:linear-gradient(267deg,#a8e6cf, #2a9d8f, #264653);
     cursor:pointer;
+    text-decoration:none;
 }
 .hero-resume{
     padding:25px 75px;
@@ -80,11 +81,74 @@
     cursor:pointer;
 
 }
-.hero-connect:hover{
+.hero-connect a:hover{
     border:2px solid white;
+    color:white;
 
 }
 .hero-resume:hover{
     border-color: #2a9d8f;
 }
+
+@media(max-width:768px){
+    .hero-content{
+        margin:0 auto;
+        padding:0 20px;
+        max-width:600px;
+    }
+    .hero-content h1{
+        font-size:3em;
+    }
+    .hero-content p{
+        font-size:1.5em;
+        margin-bottom: 25px;
+    }
+
+  .hero-resume {
+    padding: 20px 30px;
+    width: 80%;
+    max-width: 300px;
+    display: block;
+  }
+   .hero-connect a{
+    padding:20px 30px;
+    width:80%;
+    display:block;
+    max-width: 300px;
+   }
+}
+
+@media(max-width:430px) {
+  .hero-container {
+    height: calc(100vh - 60px);
+  }
+
+  .hero-content {
+    padding: 0 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.25rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .hero-action {
+    font-size: 18px;
+    gap: 15px;
+  }
+
+  .hero-connect a,
+  .hero-resume {
+    padding: 15px 25px;
+   
+    max-width: 250px;
+  }
+}
+
     

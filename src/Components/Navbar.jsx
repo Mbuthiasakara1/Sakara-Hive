@@ -1,18 +1,29 @@
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from 'react';
 
 export default function Navbar() {
+ const [isMenuOpen, setIsMenuOpen] = useState(false);
+ const toggleMenu=() =>{
+  setIsMenuOpen((prev)=> !prev)
+ }
+ 
+
   return (
     <div className="nav-container">
       <div className="navbar-logo">
         <img src="icons/logo.png" alt="logo" />
         <h2>Sakara Hive</h2>
-        </div>
+      </div>
+      <div className="menu-icon" onClick={toggleMenu}>
+        {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+      </div>
+      <div className={`menu-container ${isMenuOpen ? 'active' : ''} `}>
         <nav className="navbar">
           <ul>
             <li>
-              <NavLink to="/"
-               activeClassName="active">
+              <NavLink to="/" activeClassName="active">
                 Home
               </NavLink>
             </li>
@@ -38,8 +49,10 @@ export default function Navbar() {
             </li>
           </ul>
         </nav>
-        <div className="nav-connect">Connect with me</div>
+        <div className="nav-connect">
+          <a href="mailto:mbuthiaryne@gmail.com">Connect with me</a>
+        </div>
       </div>
-    
+    </div>
   );
 }

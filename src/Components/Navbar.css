@@ -4,6 +4,22 @@
   align-items: center;
   padding: 1em 2em;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  /* background-color: rgba(255,255,255,1); */
+  /* background-color:#e0e8f0; */
+  background:linear-gradient(to bottom, #a8e6cf, #ffffff) fixed;
+  position:fixed;
+  z-index:999;
+  width: 100%;
+  height: 90px;
+  top:0;
+}
+.menu-container{
+    width:70%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+ 
+
 }
 .navbar-logo{
     display:flex;
@@ -74,6 +90,111 @@
 
 
 }
+.nav-connect a {
+    color: white;
+    text-decoration: none;
+    display: block;  
+}
 .nav-connect:hover{
     transform:scale(1.05)
+}
+.menu-icon{
+    display:none;
+    width:2em;
+    height:2em;
+    cursor:pointer;
+}
+@media screen and (max-width:992px){
+    .logo{
+        margin-left:0;
+    }
+    .nav-container {
+        justify-content: space-between;
+        width: 100%;
+       
+         
+    }
+    .navbar{
+        display:flex;
+       padding:10px 20px;
+       align-items:center;
+       justify-content:center;
+       /* flex-direction:column; */
+
+
+    }
+   
+}
+
+@media(max-width:768px){
+    .logo{
+        margin-left:0;
+    }
+
+       .nav-container {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu-container{
+        display:none;
+        position:absolute;
+        top:90px;
+        right:0;
+        width:40%;
+        height:100vh;
+        background-color: white;
+        flex-direction:column;
+        align-items:center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index:100;
+        justify-content:flex-start;
+
+    }
+
+    .menu-container.active {
+        display: flex;
+    }
+    .navbar{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+      .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    .menu-icon {
+        display: block;
+        z-index: 200;
+    }
+    .nav-connect{
+        padding:12px 15px;
+        font-size:16px;
+        border-radius:30px;
+        width:80%;
+        text-align:center;
+        margin:10px auto;
+        display:block;
+
+    }
+
+}
+@media(max-width:430px){
+    .menu-container{
+        width: 100%;
+    }
+     .nav-connect{
+        padding:10px 12px;
+        font-size:16px;
+        border-radius:30px;
+        width:50%;
+        text-align:center;
+        margin:10px auto;
+        display:block;
+
+    }
+
 }

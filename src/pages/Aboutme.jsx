@@ -3,10 +3,11 @@ import { useEffect } from "react";
 import Navbar from "../Components/Navbar"
 import './Aboutme.css'
 import AnimatedNumber from "../Components/Animated"
+import Footer from "../Components/Footer";
 
 const Aboutme = () => {
     useEffect(()=>{
-        document.title="About|Malazi Kenya"
+        document.title="About | Malazi Kenya"
     })
   return (
     <>
@@ -99,6 +100,7 @@ const Aboutme = () => {
             <hr />
           </div>
         </div>
+        <Footer/>
      
     </>
   );

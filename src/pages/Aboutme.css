@@ -4,7 +4,7 @@
     flex-direction:column;
     justify-content:center;
     gap:80px;
-    margin:30px 100px;
+    margin: 120px 100px 30px;
 
 
 }
@@ -12,6 +12,7 @@
     position:relative;
     font-size:30px;
     font-weight:600;
+    z-index: 201;
 
 }
 .about-section{
@@ -67,6 +68,8 @@
     max-width:100%; 
     display:flex;
     justify-content:center; 
+   
+    margin-bottom:2em;
 }
 .about-achievement{
     display: flex;
@@ -81,10 +84,8 @@
     font-size:3em;
     background-color: #21D4FD;
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     font-weight:700;
 }
 .about-achievement h1 span:last-child{
@@ -105,7 +106,123 @@
 }
 .about-styles{
     font-weight:600;
+
+
 }
+
+@media only screen  and (max-width:1200px){
+    .about-container{
+        margin:100px 50px 30px;
+        gap:60px;
+    }
+   .about-section {
+    gap: 60px;
+  }
+  
+  .about-paragraph {
+    font-size: 1em;
+  
+  }
+
+
+}
+
+@media screen and (max-width:992px){
+    .about-container{
+        margin:80px 30px 20px;
+        gap:40px;
+    }
+
+    .about-section{
+        flex-direction:column;
+        align-items:center;
+        gap:40px;
+    }
+    .about-left img{
+        max-width:300px;
+        height:auto;
+    }
+    .about-right{
+        /* align-items:center; */
+        text-align:center;
+    }
+     .about-skill {
+        width: 100%;
+        justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    margin: 60px 20px 20px;
+  }
+  
+  .about-title {
+    font-size: 24px;
+  }
+  
+  .about-paragraph {
+    font-size: 16px;
+    gap: 1.5em;
+  }
+  
+  .about-skills {
+    gap: 1.5em;
+    width: 100%;
+  }
+  
+  .about-skill p {
+    min-width: 120px;
+    font-size: 16px;
+  }
+  
+  .about-achievement {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .about-styles {
+    width: 100%;
+    padding: 15px 0;
+  }
+  
+  .about-achievement hr {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .about-container {
+    margin: 40px 15px 15px;
+  }
+  
+  .about-left img {
+    max-width: 250px;
+  }
+  
+  .about-skill {
+    gap: 20px;
+  }
+  
+  .about-skill p {
+    min-width: 100px;
+    font-size: 14px;
+  }
+  
+  .about-skill hr {
+    height: 8px;
+  }
+  
+  .about-achievement h1 span:first-child {
+    font-size: 2em;
+  }
+  
+  .about-achievement h1 span:last-child {
+    font-size: 1.5em;
+  }
+}
+
 
 
 

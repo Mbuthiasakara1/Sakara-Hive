@@ -1,0 +1,139 @@
+ .form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+  width: 100%;
+}
+
+ .form input,
+.form textarea {
+  width: 700px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f8ff;
+  color: #555555;
+  font-family: outfit, sans-serif;
+  font-size: 18px;
+}
+
+.form input {
+  height: 78px;
+  padding-left: 20px;
+}
+
+.form textarea {
+  width: 650px;
+  padding: 25px;
+}
+
+.form button {
+  border: none;
+  border-radius: 30px;
+  color: #333333;
+  font-size: 20px;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #a8e6cf;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(33, 212, 253, 0.4);
+}
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+  padding: 50px;
+}
+
+.success-message h2 {
+  font-size: 2em;
+  color: #21D4FD;
+  font-weight: 600;
+}
+
+.success-message p {
+  font-size: 1.2em;
+  color: #555555;
+}
+@media (max-width: 768px) {
+  .form input,
+  .form textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .form input {
+    height: 60px;
+    padding-left: 15px;
+  }
+
+  .form textarea {
+    padding: 15px;
+  }
+
+  .form button {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+
+  .success-message {
+    padding: 30px;
+  }
+
+  .success-message h2 {
+    font-size: 1.8em;
+  }
+
+  .success-message p {
+    font-size: 1em;
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .form {
+    align-items: center;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .form input {
+    height: 50px;
+    padding-left: 10px;
+  }
+
+  .form textarea {
+    padding: 10px;
+  }
+
+  .form button {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  .success-message {
+    padding: 20px;
+  }
+
+  .success-message h2 {
+    font-size: 1.5em;
+  }
+
+  .success-message p {
+    font-size: 0.9em;
+  }
+}
