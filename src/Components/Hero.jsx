@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <h1>
-            <span> {"i'm"} Ryne Mbuthia</span> , full stack developer based in
+            <span> {"i'm"} Ryne Mbuthia</span> full stack developer based in
             Kenya
           </h1>
           <p>
